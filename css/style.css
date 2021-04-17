@@ -1,0 +1,141 @@
+        * {
+            box-sizing: border-box;
+            /* font */
+            font-family: "Averta CY", sans-serif;
+        }
+        
+        body {
+            margin: 0;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .relleno-columnas {
+            padding-top: 4vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
+            padding-bottom: 4vw;
+        }
+        
+        #header {
+            background-color: white;
+        }
+        
+        #header h1 {
+            color: darkcyan;
+            padding: 0% 10%;
+            font-size: 5.5vw;
+        }
+        
+        #header h2 {
+            padding: 2% 10%;
+            font-size: 2vw;
+        }
+        
+        #section1 {
+            background-color: #f5eef5;
+        }
+        
+        #section2 {
+            background-color: #faf5f3;
+        }
+        
+        #section3 {
+            background-color: #f2f9f8
+        }
+        
+        .column2 {
+            width: 50%;
+            float: left;
+            padding: 7%;
+        }
+        
+        .column2 h2 {
+            font-size: 2vw;
+        }
+        
+        .column2 h1 {
+            font-size: 3.8vw;
+            color: grey;
+        }
+        
+        .column2 h3 {
+            font-size: 1.8vw;
+        }
+        
+        img {
+            border-radius: 10px;
+        }
+        
+        #section4 {
+            background-color: #000000;
+        }
+        
+        .column1 {
+            width: 100%;
+            float: left;
+            color: white;
+            padding: 4% 7%;
+        }
+        
+        .column1 p {
+            font-size: 1.8vw;
+        }
+        
+        .column4 {
+            width: 25%;
+            float: left;
+            padding: 4% 7%;
+            color: white;
+        }
+        
+        .column4 h1 {
+            font-size: 1.2vw;
+        }
+        
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @media screen and (max-width:700px) {
+            .flex:not(#header) {
+                display: block;
+            }
+            .header h1 {
+                font-size: 45px;
+            }
+            .header h2 {
+                font-size: 20px;
+            }
+            .column2 {
+                width: 100%;
+            }
+            .column4 {
+                width: 50%;
+            }
+            .column1 {
+                width: 100%;
+            }
+            .column2 h2 {
+                font-size: 3.5vw;
+            }
+            .column2 h1 {
+                font-size: 3.3vw;
+            }
+            .column2 h3 {
+                font-size: 2.4vw;
+            }
+            .column1 h1 {
+                font-size: 2.8vw;
+            }
+            .column4 p {
+                font-size: 2.4vw;
+            }
+        }
